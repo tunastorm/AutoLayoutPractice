@@ -10,6 +10,8 @@ import UIKit
 class EmotionViewController: UIViewController {
 
     
+    @IBOutlet var labelList: [UILabel]!
+    
     @IBOutlet weak var emotionButton1: UIButton!
     
     @IBOutlet weak var emotionButton2: UIButton!
@@ -22,6 +24,11 @@ class EmotionViewController: UIViewController {
     @IBOutlet weak var emotionLabel2: UILabel!
     
     @IBOutlet weak var emotionLabel3: UILabel!
+    
+    
+    
+    
+    var count: [Int] = [0,0,0]
     
     
     override func viewDidLoad() {
@@ -53,9 +60,28 @@ class EmotionViewController: UIViewController {
         emotionButton.setTitleColor(pickedColor, for: .normal)
     }
     
+    @IBAction func emotionButtonClicked(_ sender: UIButton) {
+        print(sender.tag)
+        
+        count[sender.tag] = count[sender.tag] + 1
+        
+        for label in labelList {
+            label.text = "\(count[label.tag])번"
+            var newWidth: Double = 0
+            if let textLength = label.text?.count {
+                newWidth = Double(textLength * 20) + 10.0
+            }
+            label.frame.size = CGSize(width: newWidth, height: label.frame.height)
+        }
+    }
+    @IBAction func ImageViewTapped(_ sender: UITapGestureRecognizer) {
+        print("===================")
+    }
     
-    @IBAction func emotionButton1Clicked(_ sender: UIButton) {
-        emotionLabel1.text = "4567"
+    // 1. did end on exit
+    // 2. view.endEditing(true)
+    @IBAction func keybordDismiss(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
 }
