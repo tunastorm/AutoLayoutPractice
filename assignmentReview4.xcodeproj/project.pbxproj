@@ -16,6 +16,7 @@
 		BCB756CC2BFAD48B00541FC3 /* assignmentReview4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB756CB2BFAD48B00541FC3 /* assignmentReview4Tests.swift */; };
 		BCB756D62BFAD48B00541FC3 /* assignmentReview4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB756D52BFAD48B00541FC3 /* assignmentReview4UITests.swift */; };
 		BCB756D82BFAD48B00541FC3 /* assignmentReview4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB756D72BFAD48B00541FC3 /* assignmentReview4UITestsLaunchTests.swift */; };
+		BCB756E52BFAD4CA00541FC3 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB756E42BFAD4CA00541FC3 /* EmotionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BCB756D12BFAD48B00541FC3 /* assignmentReview4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = assignmentReview4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB756D52BFAD48B00541FC3 /* assignmentReview4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignmentReview4UITests.swift; sourceTree = "<group>"; };
 		BCB756D72BFAD48B00541FC3 /* assignmentReview4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignmentReview4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCB756E42BFAD4CA00541FC3 /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				BCB756BD2BFAD48B00541FC3 /* Assets.xcassets */,
 				BCB756BF2BFAD48B00541FC3 /* LaunchScreen.storyboard */,
 				BCB756C22BFAD48B00541FC3 /* Info.plist */,
+				BCB756E42BFAD4CA00541FC3 /* EmotionViewController.swift */,
 			);
 			path = assignmentReview4;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB756E52BFAD4CA00541FC3 /* EmotionViewController.swift in Sources */,
 				BCB756B92BFAD48A00541FC3 /* ViewController.swift in Sources */,
 				BCB756B52BFAD48A00541FC3 /* AppDelegate.swift in Sources */,
 				BCB756B72BFAD48A00541FC3 /* SceneDelegate.swift in Sources */,
